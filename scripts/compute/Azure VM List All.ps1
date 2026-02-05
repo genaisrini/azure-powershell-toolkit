@@ -2,7 +2,8 @@
 #Requires -Modules Az.Resources
 #Requires -Modules Az.Compute
 
-<#`n.SYNOPSIS
+<#
+.SYNOPSIS
     Azure Vm List All
 
 .DESCRIPTION
@@ -14,6 +15,7 @@
 
     1.0
     Requires appropriate permissions and modules
+#>
     [string]$ErrorActionPreference = "Stop"
     [string]$VerbosePreference = if ($PSBoundParameters.ContainsKey('Verbose')
 try {
